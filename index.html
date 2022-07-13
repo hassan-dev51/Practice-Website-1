@@ -4,9 +4,758 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+    <title>Portfolio</title>
   </head>
   <body>
-    <h1>git has installed successfully</h1>
+    <header class="header">
+      <a href="/"><img src="./img/logo.png" alt="error" class="logo" /></a>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#" class="navbar-link home-link">Home</a></li>
+          <li><a href="#" class="navbar-link about-link">About</a></li>
+          <li><a href="#" class="navbar-link services-link">Services</a></li>
+          <li><a href="#" class="navbar-link portfolio-link">Portfolio</a></li>
+          <li><a href="#" class="navbar-link contact-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main tag use for hero section -->
+    <main>
+      <section class="section-hero section">
+        <div class="container grid grid-two-column">
+          <div class="section-hero-data">
+            <p class="hero-top-data">My Self</p>
+            <!-- google recommend us to use h1 tag for just 1 time in the full website -->
+            <h1 class="hero-heading">Hassan Ali</h1>
+            <p class="hero-para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
+              dicta corrupti voluptatum.
+            </p>
+            <div>
+              <a href="#" class="btn btn-hire">Hire Me</a>
+            </div>
+          </div>
+          <!-- hero section img  -->
+          <div class="section-hero-img">
+            <img src="./img/hero-img.jpg" alt="error" class="hero-img" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- biodata section -->
+    <section class="section-bio section">
+      <div class="container grid grid-two-column">
+        <div class="bio-img">
+          <img src="./img/biodata.jpg" alt="error" />
+        </div>
+        <div class="biodata">
+          <h2 class="common-heading">Bio Data</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia
+            neque modi
+          </p>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="biodata-stat">
+            <div class="bio-stat">
+              <h3>Design</h3>
+              <div class="bio-progress-bar progress-bar">
+                <span>80%</span>
+              </div>
+            </div>
+            <div class="bio-stat">
+              <h3>HTML</h3>
+              <div class="bio-progress-bar progress-bar-2">
+                <span>70%</span>
+              </div>
+            </div>
+            <div class="bio-stat">
+              <h3>CSS</h3>
+              <div class="bio-progress-bar progress-bar-3">
+                <span>60%</span>
+              </div>
+            </div>
+            <div class="bio-stat">
+              <h3>jAVASCTIPT</h3>
+              <div class="bio-progress-bar progress-bar-4">
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="btn-hire">Download resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section  -->
+    <section class="section section-portfolio" id="portfolio-section">
+      <div class="container">
+        <h2 class="common-heading">Latest Work</h2>
+        <p>
+          Lorem, ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Aut dolores reiciendis est. Nam qui voluptatem, explicabo
+          impedit obcaecati iure laudantium eos quisquam, totam fuga excepturi
+          eius, tenetur voluptatum. Voluptatum, alias.
+        </p>
+      </div>
+
+      <div class="btns-portfolio">
+        <div class="btn-hire btn-portfolio" data-btn-number="1">
+          MOBILE APPS
+        </div>
+        <div class="btn-hire btn-portfolio" data-btn-number="2">JAMSTACK</div>
+        <div class="btn-hire btn-portfolio" data-btn-number="3">MERN STACK</div>
+      </div>
+
+      <div class="container grid grid-three-column portfolio-images">
+        <div class="image-overally btn-portfolio--1">
+          <img src="./img/hero-img.jpg" alt="error" />
+          <div class="overaly">
+            <a
+              href="https://www.youtube.com/watch?v=e1edxTqJnKk"
+              target="_blank"
+              class="common-heading"
+              >Project 1</a
+            >
+          </div>
+        </div>
+
+        <div class="image-overally btn-portfolio--1">
+          <img src="./img/hero-img.jpg" alt="error" />
+          <div class="overaly">
+            <a
+              href="https://www.youtube.com/watch?v=e1edxTqJnKk"
+              target="_blank"
+              class="common-heading"
+              >Project 2</a
+            >
+          </div>
+        </div>
+
+        <div class="image-overally btn-portfolio--3 btn-portfolio--2">
+          <img src="./img/hero-img.jpg" alt="error" />
+          <div class="overaly">
+            <a
+              href="https://www.youtube.com/watch?v=e1edxTqJnKk"
+              target="_blank"
+              class="common-heading"
+              >Project 3</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="image-overally btn-portfolio--3 btn-portfolio--2 btn-portfolio--1"
+        >
+          <img src="./img/hero-img.jpg" alt="error" />
+          <div class="overaly">
+            <a
+              href="https://www.youtube.com/watch?v=e1edxTqJnKk"
+              target="_blank"
+              class="common-heading"
+              >Project 4</a
+            >
+          </div>
+        </div>
+
+        <div class="image-overally btn-portfolio--2 btn-portfolio--3">
+          <img src="./img/hero-img.jpg" alt="error" />
+          <div class="overaly">
+            <a
+              href="https://www.youtube.com/watch?v=e1edxTqJnKk"
+              target="_blank"
+              class="common-heading"
+              >Project 5</a
+            >
+          </div>
+        </div>
+
+        <div class="image-overally btn-portfolio--3 btn-portfolio--1">
+          <img src="./img/hero-img.jpg" alt="error" />
+          <div class="overaly">
+            <a
+              href="https://www.youtube.com/watch?v=e1edxTqJnKk"
+              target="_blank"
+              class="common-heading"
+              >Project 6s</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- work counter section -->
+
+    <section class="section section-work-data">
+      <div class="container grid grid-four-column">
+        <div>
+          <h2 class="counter-number">300+</h2>
+          <p>Project completed</p>
+        </div>
+
+        <div>
+          <h2 class="counter-number">600+</h2>
+          <p>Project completed</p>
+        </div>
+
+        <div>
+          <h2 class="counter-number">900+</h2>
+          <p>Project completed</p>
+        </div>
+
+        <div>
+          <h2 class="counter-number">1200+</h2>
+          <p>Project completed</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services  -->
+    <section class="section section-services">
+      <div class="container">
+        <div class="common-heading">Services</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam
+          accusantium vitae?
+        </p>
+      </div>
+
+      <div class="container grid grid-three-column">
+        <div class="secrvice-box">
+          <ion-icon name="desktop-outline" class="sercice-icon"></ion-icon>
+          <h3>web design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            libero tempora quia!
+          </p>
+        </div>
+
+        <div class="secrvice-box">
+          <ion-icon name="desktop-outline" class="sercice-icon"></ion-icon>
+          <h3>web design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            libero tempora quia!
+          </p>
+        </div>
+
+        <div class="secrvice-box">
+          <ion-icon name="desktop-outline" class="sercice-icon"></ion-icon>
+          <h3>web design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            libero tempora quia!
+          </p>
+        </div>
+
+        <div class="secrvice-box">
+          <ion-icon name="desktop-outline" class="sercice-icon"></ion-icon>
+          <h3>web design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            libero tempora quia!
+          </p>
+        </div>
+
+        <div class="secrvice-box">
+          <ion-icon name="desktop-outline" class="sercice-icon"></ion-icon>
+          <h3>web design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            libero tempora quia!
+          </p>
+        </div>
+
+        <div class="secrvice-box">
+          <ion-icon name="desktop-outline" class="sercice-icon"></ion-icon>
+          <h3>web design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            libero tempora quia!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Resume section -->
+
+    <section class="section section-resume">
+      <div class="container grid grid-two-column">
+        <div class="resume-img">
+          <img src="./img/biodata.jpg" alt="error" />
+        </div>
+        <div class="resume">
+          <h2 class="common-heading">resume</h2>
+          <p>My Work Experience</p>
+          <div class="resume-work">
+            <div class="resume-work-place">
+              <h3>Online work</h3>
+              <p>
+                <ion-icon name="podium-outline"></ion-icon> &nbsp; Thapa
+                technical.com &nbsp;
+                <ion-icon name="location-outline"></ion-icon> Pune India
+              </p>
+            </div>
+            <div class="resume-place">
+              <h4>Full time</h4>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon> April 2019 &nbsp;-
+                present
+              </p>
+            </div>
+          </div>
+          <hr />
+
+          <div class="resume-work">
+            <div class="resume-work-place">
+              <h3>Online work</h3>
+              <p>
+                <ion-icon name="podium-outline"></ion-icon> &nbsp; Thapa
+                technical.com &nbsp;
+                <ion-icon name="location-outline"></ion-icon> Pune India
+              </p>
+            </div>
+            <div class="resume-place">
+              <h4>Full time</h4>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon> April 2019 &nbsp;-
+                present
+              </p>
+            </div>
+          </div>
+          <hr />
+
+          <div class="resume-work">
+            <div class="resume-work-place">
+              <h3>Online work</h3>
+              <p>
+                <ion-icon name="podium-outline"></ion-icon> &nbsp; Thapa
+                technical.com &nbsp;
+                <ion-icon name="location-outline"></ion-icon> Pune India
+              </p>
+            </div>
+            <div class="resume-place">
+              <h4>Full time</h4>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon> April 2019 &nbsp;-
+                present
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="resume-education">
+            <div class="resume-work">
+              <div class="resume-work-place">
+                <h3>Education</h3>
+                <p>
+                  <ion-icon name="podium-outline"></ion-icon> &nbsp; BS (IT)
+                  &nbsp; <ion-icon name="location-outline"></ion-icon> Gujrat
+                </p>
+              </div>
+              <div class="resume-place">
+                <h4>COMPLETED</h4>
+                <p><ion-icon name="calendar-outline"></ion-icon> Sep 2022</p>
+              </div>
+            </div>
+            <div class="resume-work">
+              <div class="resume-work-place">
+                <p>
+                  <ion-icon name="podium-outline"></ion-icon> &nbsp; FSC &nbsp;
+                  <ion-icon name="location-outline"></ion-icon> GWB
+                </p>
+              </div>
+              <div class="resume-place">
+                <h4>COMPLETED</h4>
+                <p><ion-icon name="calendar-outline"></ion-icon> Sep 2017</p>
+              </div>
+            </div>
+            <div class="resume-work">
+              <div class="resume-work-place">
+                <p>
+                  <ion-icon name="podium-outline"></ion-icon> &nbsp; MATRIC
+                  &nbsp; <ion-icon name="location-outline"></ion-icon> GWB
+                </p>
+              </div>
+              <div class="resume-place">
+                <h4>COMPLETED</h4>
+                <p><ion-icon name="calendar-outline"></ion-icon> Sep 2015</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-testonomial">
+      <!-- Swiper -->
+      <div class="container">
+        <div class="common-heading">Happy Clients</div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client-message">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto ipsam hic minus provident.
+                </p>
+              </div>
+              <div class="client-detail grid grid-two-column">
+                <figure>
+                  <img src="./img/biodata.jpg" alt="error" />
+                </figure>
+                <div class="client-name">
+                  <h3>Bill Gates</h3>
+                  <h3>Enterprenure</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-message">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto ipsam hic minus provident.
+                </p>
+              </div>
+              <div class="client-detail grid grid-two-column">
+                <figure>
+                  <img src="./img/biodata.jpg" alt="error" />
+                </figure>
+                <div class="client-name">
+                  <h3>Bill Gates</h3>
+                  <h3>Enterprenure</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-message">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto ipsam hic minus provident.
+                </p>
+              </div>
+              <div class="client-detail grid grid-two-column">
+                <figure>
+                  <img src="./img/biodata.jpg" alt="error" />
+                </figure>
+                <div class="client-name">
+                  <h3>Bill Gates</h3>
+                  <h3>Enterprenure</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-message">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto ipsam hic minus provident.
+                </p>
+              </div>
+              <div class="client-detail grid grid-two-column">
+                <figure>
+                  <img src="./img/biodata.jpg" alt="error" />
+                </figure>
+                <div class="client-name">
+                  <h3>Bill Gates</h3>
+                  <h3>Enterprenure</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-message">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto ipsam hic minus provident.
+                </p>
+              </div>
+              <div class="client-detail grid grid-two-column">
+                <figure>
+                  <img src="./img/biodata.jpg" alt="error" />
+                </figure>
+                <div class="client-name">
+                  <h3>Bill Gates</h3>
+                  <h3>Enterprenure</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-message">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto ipsam hic minus provident.
+                </p>
+              </div>
+              <div class="client-detail grid grid-two-column">
+                <figure>
+                  <img src="./img/biodata.jpg" alt="error" />
+                </figure>
+                <div class="client-name">
+                  <h3>Bill Gates</h3>
+                  <h3>Enterprenure</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-message">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto ipsam hic minus provident.
+                </p>
+              </div>
+              <div class="client-detail grid grid-two-column">
+                <figure>
+                  <img src="./img/biodata.jpg" alt="error" />
+                </figure>
+                <div class="client-name">
+                  <h3>Bill Gates</h3>
+                  <h3>Enterprenure</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-message">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Iusto ipsam hic minus provident.
+                </p>
+              </div>
+              <div class="client-detail grid grid-two-column">
+                <figure>
+                  <img src="./img/biodata.jpg" alt="error" />
+                </figure>
+                <div class="client-name">
+                  <h3>Bill Gates</h3>
+                  <h3>Enterprenure</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- freelancing section -->
+    <section class="section section-freelancing">
+      <div class="overlay-freelancing"></div>
+      <div class="container">
+        <h2>i am available for <span>Freelancing</span></h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+          accusantium exercitationem inventore nesciunt.
+        </p>
+        <a href="#" class="btn-hire">Hire me</a>
+      </div>
+    </section>
+
+    <!-- contact us page -->
+    <section class="section section-contact">
+      <div class="container">
+        <h2 class="common-heading">Contact Us</h2>
+      </div>
+      <div class="section-contact-main section-contact-container">
+        <form action="#">
+          <div class="grid grid-two-column">
+            <div>
+              <label for="username"></label>
+              <input
+                type="text"
+                name="username"
+                placeholder="Name"
+                id="username"
+              />
+            </div>
+
+            <div>
+              <label for="email"></label>
+              <input type="email" name="email" placeholder="Email" id="email" />
+            </div>
+          </div>
+          <div>
+            <label for="subject"></label>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              id="subject"
+            />
+          </div>
+          <div>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Write Your Message"
+            ></textarea>
+          </div>
+          <div>
+            <input type="submit" value="submit" class="btn-hire" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section section-footer">
+      <div class="container grid grid-four-column">
+        <div class="footer-about">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            consequatur laboriosam! Voluptates.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div class="service-links">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-address">
+          <h3>Have a Question</h3>
+          <address>
+            <div>
+              <p>
+                <span><ion-icon name="location-outline"></ion-icon></span>
+                <a href="#">Sialkot Punjab</a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span><ion-icon name="call-outline"></ion-icon></span>
+                <a href="tel:+92 3456760792">+92 3456760792</a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span
+                  ><ion-icon name="mail-outline"></ion-icon>
+                  <a href="mailto:developerhassan51@gmail.com"
+                    >developerhassan51@gmail.com</a
+                  ></span
+                >
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="container">
+        <div class="socail-icons">
+          <a href=""
+            ><ion-icon name="logo-instagram" class="footer-icon"></ion-icon
+          ></a>
+          <a href=""
+            ><ion-icon name="logo-linkedin" class="footer-icon"></ion-icon
+          ></a>
+          <a href=""
+            ><ion-icon name="logo-facebook" class="footer-icon"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <div class="footer-credit">
+        <p>
+          copyright &copy; all rights are reserved
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
   </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </html>
