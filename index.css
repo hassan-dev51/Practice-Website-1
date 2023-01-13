@@ -564,7 +564,6 @@ p {
 .section-contact-main {
   max-width: 70rem;
   margin: 0 auto;
-  margin-top: 9rem;
   transition: all 0.3s linear;
 }
 .section-contact-main .grid {
